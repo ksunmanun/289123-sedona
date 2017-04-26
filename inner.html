@@ -6,93 +6,103 @@
   </head>
   <body>
     <header class="main-header">
-      <nav>
-        <ul>
-          <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a> </li>
-            <li> <a href="#"><img src="http://placehold.it/150x100" alt="Эмблема сайта"></a></li>
-            <li><a href="#">Карта штата</a></li>
+      <div class="container">
+        <nav class="main-navigation">
+          <ul>
+            <li>  <a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li class="logo"><a href="#"><img src="http://placehold.it/150x100" alt="Логотип сайта"></li>
+            <li><a href="#">Карта штата</a>  </li>
             <li><a href="#">Гостиницы</a></li>
-        </ul>
-      </nav>
+          </ul>
+        </nav>
     </header>
   <main>
-    <section>
-      <div>
+    <section class="filters">
+      <div class="infrastructure">
         <h2>Инфраструктура:</h2>
-          <form>
-            <input type="checkbox">
-            <label>Бассейн</label>
-            <br>
-            <input type="checkbox">
-            <label>Парковка</label>
-            <br>
-            <input type="checkbox">
-            <label>Wi-fi</label>
+          <form method="post" action="#">
+            <label for="pool">  <input type="checkbox" id="pool">Бассейн</label>
+            <label for="parking"><input type="checkbox" id="parking">Парковка</label>
+            <label for="wifi"><input type="checkbox" id="wifi">Wi-fi</label>
           </form>
       </div>
-      <div>
+      <div class="Lodging">
         <h2>Тип жилья:</h2>
           <form>
-            <input type="checkbox">
-            <label>Гостиница</label>
-            <br>
-            <input type="checkbox">
-            <label>Отель</label>
-            <br>
-            <input type="checkbox">
-            <label>Апартаменты</label>
+            <label for="hotel"><input type="checkbox" id="hotel">Гостиница</label>
+            <label for="motel"><input type="checkbox" id="motel">Отель</label>
+            <label for="apartments"><input type="checkbox" id="apartments">Апартаменты</label>
           </form>
       </div>
-      <div>
+      <!-- Не работает -->
+      <div class="price">
         <h2>Стоимость в сутки (Р):</h2>
+          <form class="from-to" action="#" method="post">
+            <label for="from" <input id="from" class="min" type="text" value="0">от</label>
+            <label for="to"><input id="to" class="max" type="text" value="3000">до</label>
+            <input type="submit" value="Найти">
+          </form>
       </div>
-    </section>
-    <section>
-      <header>
-      <h2>Найдено: 3</h2>
-        <div>
+      <!-- до этого момента -->
+      <div="sorting">
+        <h2>Найдено: 3</h2>
+        <div="sorting-various">
         <h3>Сортировка:</h3>
         <a href="#">По цене</a>
         <a href="#">По типу</a>
         <a href="#">По рейтенгу</a>
         </div>
-      </header>
+      </div>
     </section>
-      <div>
-        <a href="#">Amara resort & spa</a>
-        <p>Гостиница</p>
-        <p>От 3500 Р.</p>
-        <div>
+      <div class="results">
+        <div class="Result variant">
+          <img src="http://placehold.it/150x100" alt="Amara resort & spa">
+          <a href="#">Amara resort & spa</a>
+          <p>Гостиница</p>
+          <p>От 3500 Р.</p>
+        <div class="rating">
       <p>Рейтинг: 8,5</p>
         </div>
-        <div>
+        <div class="result-stars">
+
+        </div>
+        <div class="buttons">
           <a href="#">Подробнее</a>
           <a href="#">Забронировать</a>
         </div>
       </div>
-    <div>
+    </div>
+    <div class="Result variant">
+      <img src="http://placehold.it/150x100" alt="Desert quail inn">
         <a href="#">Desert quail inn</a>
         <p>Мотель</p>
         <p>От 2000 Р.</p>
-      <div>
-      <p>Рейтинг: 8,9</p>
-      </div>
-      <div>
-        <a href="#">Подробнее</a>
-        <a href="#">Забронировать</a>
-      </div>
-      </div>
-    <div>
+        <div class="result-stars">
+
+        </div>
+        <div class="rating">
+          <p>Рейтинг: 8,9</p>
+        </div>
+        <div class="buttons">
+          <a href="#">Подробнее</a>
+          <a href="#">Забронировать</a>
+        </div>
+    </div>
+    <div class="Result variant">
+      <img src="http://placehold.it/150x100" alt="Villias at poco diablo">
         <a href="#">Villias at poco diablo</a>
         <p>Апартаменты</p>
         <p>От 4000 Р.</p>
-      <div>
-      <p>Рейтинг: 9,2</p>
+      <div class="result-stars">
+
       </div>
+      <div class="rating">
+        <p>Рейтинг: 9,2</p>
+      </div>
+      <div class=" class="buttons"">
         <a href="#">Подробнее</a>
         <a href="#">Забронировать</a>
-      <div>
       </div>
     </div>
   </main>
@@ -104,6 +114,10 @@
       <a href="#">facebook</a>
       <a href="#">youtube</a>
     </div>
+    <div class="logo-academy">
+      <p>Website by</p>
++     <a href="#" class="html-academy">html academy</a>
++   </div>
   </footer>
   </body>
 </html>
